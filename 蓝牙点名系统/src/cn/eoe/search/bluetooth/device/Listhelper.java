@@ -1,0 +1,26 @@
+package cn.eoe.search.bluetooth.device;
+
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteDatabase.CursorFactory;
+import android.database.sqlite.SQLiteOpenHelper;
+
+public class Listhelper extends SQLiteOpenHelper {
+
+	public final String listdbname="allexcel.db3";
+	public Listhelper(Context context, String name, CursorFactory factory,
+			int version) {
+		super(context, name, factory, 1);
+	}
+
+	@Override
+	public void onCreate(SQLiteDatabase db) {
+		db.execSQL("create table allexcel(dbnames varchar(30) primary key)");
+	}
+
+	@Override
+	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+		
+	}
+
+}

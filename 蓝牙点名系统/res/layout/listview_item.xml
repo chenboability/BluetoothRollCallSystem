@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="horizontal"
+    android:paddingRight="20dp" >
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:text="陈渤" />
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:text="201330550078" />
+
+    <cn.eoe.search.bluetooth.device.MyCheckBox
+        android:id="@+id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+         android:focusable="false"
+        android:paddingLeft="19dp" />
+
+    <cn.eoe.search.bluetooth.device.MyCheckBox
+        android:id="@+id/iscome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:focusable="false"
+         android:layout_marginLeft="20dp"
+        android:paddingLeft="25dp" />
+
+</LinearLayout>
